@@ -11,7 +11,7 @@ root.geometry("800x500") # window size
 tk.Label(root, text = "Welcome to TT Corp Work Management System").pack()
 
 #Display an image
-image = tk.PhotoImage(file="TT Corp WMS1")
+image = tk.PhotoImage(file="assets/black and white minimal technology Logo.png")
 
 
 root.mainloop()
