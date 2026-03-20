@@ -34,7 +34,7 @@ def insert_sample_users(): #put some example users into the database
     ]
 
     for user in users:
-        cursor,execute("""
+        cursor.execute("""
             INSERT OR IGNOR INTO users (full_name, username,password, role)
             VALUES (?, ?, ?, ?)
         """, user)
