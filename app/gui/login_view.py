@@ -32,7 +32,21 @@ def create_widgets(self):
     self.username_entry = tk.Entry(self.root, width=30)
     self.username_entry.pack.pack(pady=5)
 
-    #password entry
+    #password label
+    
+    password_label = tk.Label(self.root,text="password")
+    password_label.pack()
 
+   #password entry box
     self.password_entry = tk.Entry(self.root, width=30, show="*")
+    self.password_entry.pack(pady=5)
+
+    #create clickable botton
+
+    login_button = tk.Button(
+        self.root,
+        text="Login",
+        width=15,
+        command=self.handle_login #runs function when the botton is clicked
+    )
 
