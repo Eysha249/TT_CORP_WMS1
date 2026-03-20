@@ -9,11 +9,11 @@ def run_app():
     root.maxsize(500, 500)
     root.geometry("800x500")
 
-    tk.label(
+    tk.Label(
         root,
         text="welcome to TT Corp Work Management System",
         bg="white"
-    ).pack(paddy=10)
+    ).pack(pady=10)
 
     image = tk.PhotoImage(file="assets/tt_logo.png")
 
