@@ -22,3 +22,17 @@ def create_widgets(self):
     )
     title_label.pack(pady=20) #vertical spacing for widget on screen
 
+    #username label
+
+    username_label = tk.Entry(self.root, text="Username")
+    username_label.pack()
+    
+    #username entry box
+
+    self.username_entry = tk.Entry(self.root, width=30)
+    self.username_entry.pack.pack(pady=5)
+
+    #password entry
+
+    self.password_entry = tk.Entry(self.root, width=30, show="*")
+
