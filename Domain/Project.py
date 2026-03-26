@@ -1,8 +1,10 @@
 import datetime
+from Domain.Projectstatus import ProjectStatus
 
-class project:
-    def __init__(self, Name, description, status, createdAt,task):
-        self.name = self.name   
+class Project:
+    def __init__(self, name, description, status:ProjectStatus):
+        self.name = name   
         self.desription = description
         self.status = status
         self.createdAt = datetime.datetime.now
+        
