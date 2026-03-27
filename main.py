@@ -1,17 +1,9 @@
-from app.database.db_setup import create_tables, insert_sample_users
-from app.gui.main_window import run_app
-from app.gui.login_view import LoginView    
+import tkinter as tk
 
-def main():
-    #prepare database
-    create_tables()
-    insert_sample_users()
+from App.Navigation import Navigation
 
-    # start GUI
-    run_app()
+root = tk.Tk()
 
-
-if __name__ == "__main__":
-    run_app()
-
-
+navigator = Navigation(root)
+root.geometry("300x300+50+50")
+root.mainloop()
